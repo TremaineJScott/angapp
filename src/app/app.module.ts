@@ -9,6 +9,7 @@ import { BackStoryComponent } from './back-story/back-story.component';
 import { TestComponent } from './test/test.component';
 import { CharacterClassListComponent } from './character-class-list/character-class-list.component';
 import { ClassDetailsComponent } from './class-details/class-details.component';
+import { BossmonstersModule } from './bossmonsters/bossmonsters.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ClassDetailsComponent } from './class-details/class-details.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BossmonstersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
