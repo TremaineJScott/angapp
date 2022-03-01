@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngApp';
+  title: string= 'D & D';
+  components: string[] = ["Character","Gear","Monster","Dungeon"];
+
+  name: string ="";
+
+  addName(form:NgForm){
+      let newName = form.form.value.name;
+      this.name = newName;
+    }
+
+  changeTitle(newTitle:string) : void {
+    this.title = newTitle;
+  }
+
+  addComponent(form: NgForm){
+    let newComponent = form.form.value.name;
+    this.components.push(newComponent)
+  }
 }

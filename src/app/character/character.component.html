@@ -1,0 +1,9 @@
+<h1>Character Details for {{name | uppercase}}</h1>
+
+<p>Current gold: {{goldAmount | currency}}</p>
+<p>Current health: {{healthPercent | percent}}</p>
+    <hr>
+    <h3>Weapons</h3>
+    <li *ngFor="let weapon of weapons">{{weapon | lowercase}}</li>
+ 
+    <app-back-story></app-back-story>    

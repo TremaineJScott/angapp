@@ -1,14 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { CharacterComponent } from './character/character.component';
+import { BackStoryComponent } from './back-story/back-story.component';
+import { TestComponent } from './test/test.component';
+import { CharacterClassListComponent } from './character-class-list/character-class-list.component';
+import { ClassDetailsComponent } from './class-details/class-details.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CharacterComponent,
+    BackStoryComponent,
+    TestComponent,
+    CharacterClassListComponent,
+    ClassDetailsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

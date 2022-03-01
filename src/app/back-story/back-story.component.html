@@ -1,0 +1,16 @@
+<hr>
+<label for="hometown">Home Town: </label>
+<input name="hometown" [(ngModel)]="homeTown">
+<br>
+<label for="profession">Profession</label>
+<input name="profession" [(ngModel)]="profession">
+
+<button (click)="toggleStory()">{{buttonText}}</button>
+<div *ngIf="showStory">
+    <br>
+    <h3>Back Story</h3>
+    <p>I have spent my whole life working as 
+        a {{profession}} in {{homeTown}}.
+    </p>
+</div>
+
